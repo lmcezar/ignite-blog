@@ -2,8 +2,49 @@ import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
 import { Post } from "./components/Post";
 
-import "./global.css";
 import styles from "./App.module.css";
+
+import "./global.css";
+
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl:
+        "https://avatars.githubusercontent.com/u/3679709?s=400&u=5cfc5021deb17624788dfb4e45bc5f94f88d9148&v=4",
+      nome: "Lucas Cezar",
+      role: "Studant @ Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "Fala galeraa 👋" },
+      {
+        type: "paragraph",
+        content:
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+      },
+      { type: "link", content: "jane.design/doctorcare" },
+    ],
+    publishedAt: new Date("2023-08-05 02:30:00"),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: "https://github.com/maykbrito.png",
+      nome: "Mayk Brito",
+      role: "Educator @ Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "Fala galeraa 👋" },
+      {
+        type: "paragraph",
+        content:
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+      },
+      { type: "link", content: "jane.design/doctorcare" },
+    ],
+    publishedAt: new Date("2023-08-04 02:30:00"),
+  },
+];
 
 function App() {
   return (
@@ -12,14 +53,15 @@ function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Lucas Cezar"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius rhoncus massa, vel convallis nisi pharetra vitae. Proin eget tincidunt orci. Curabitur eget turpis luctus, sollicitudin neque sed, pulvinar nunc. Sed convallis tellus et justo vulputate lacinia. Duis dignissim urna nec erat condimentum, vitae tincidunt purus commodo. Duis in viverra est. Integer molestie venenatis nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse tristique tristique scelerisque. Nunc nec dolor sed leo consectetur ultricies ut eget sem."
-          />
-          <Post
-            author="Lucas Cezar"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius rhoncus massa, vel convallis nisi pharetra vitae. Proin eget tincidunt orci. Curabitur eget turpis luctus, sollicitudin neque sed, pulvinar nunc. Sed convallis tellus et justo vulputate lacinia. Duis dignissim urna nec erat condimentum, vitae tincidunt purus commodo. Duis in viverra est. Integer molestie venenatis nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse tristique tristique scelerisque. Nunc nec dolor sed leo consectetur ultricies ut eget sem."
-          />
+          {posts.map((post) => {
+            return (
+              <Post
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
+          })}
         </main>
       </div>
     </>
