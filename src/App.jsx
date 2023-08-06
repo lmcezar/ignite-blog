@@ -12,26 +12,8 @@ const posts = [
     author: {
       avatarUrl:
         "https://avatars.githubusercontent.com/u/3679709?s=400&u=5cfc5021deb17624788dfb4e45bc5f94f88d9148&v=4",
-      nome: "Lucas Cezar",
-      role: "Studant @ Rocketseat",
-    },
-    content: [
-      { type: "paragraph", content: "Fala galeraa 👋" },
-      {
-        type: "paragraph",
-        content:
-          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
-      },
-      { type: "link", content: "jane.design/doctorcare" },
-    ],
-    publishedAt: new Date("2023-08-05 02:30:00"),
-  },
-  {
-    id: 2,
-    author: {
-      avatarUrl: "https://github.com/maykbrito.png",
-      nome: "Mayk Brito",
-      role: "Educator @ Rocketseat",
+      name: "Lucas Cezar",
+      role: "Student @ Rocketseat",
     },
     content: [
       { type: "paragraph", content: "Fala galeraa 👋" },
@@ -43,6 +25,24 @@ const posts = [
       { type: "link", content: "jane.design/doctorcare" },
     ],
     publishedAt: new Date("2023-08-04 02:30:00"),
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: "https://github.com/maykbrito.png",
+      name: "Mayk Brito",
+      role: "Educator @ Rocketseat",
+    },
+    content: [
+      { type: "paragraph", content: "Fala galeraa 👋" },
+      {
+        type: "paragraph",
+        content:
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O name do projeto é DoctorCare 🚀",
+      },
+      { type: "link", content: "jane.design/doctorcare" },
+    ],
+    publishedAt: new Date("2023-08-05 02:30:00"),
   },
 ];
 
