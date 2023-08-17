@@ -1,27 +1,57 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Ignite Blog
 
-Currently, two official plugins are available:
+  Este é o primeiro projeto feito através do treinamento adquirido da [Rocketseat](https://www.rocketseat.com.br/)  utilizando os principais fundamentos do React com TypeScript, como: 
+  
+ - Estado
+ - Componentes
+ -  Propriedade
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img  src="imagem.gif"  alt="Imagem do projeto">
 
-## Expanding the ESLint configuration
+  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+> O projeto visa utilizar os fundamentos do React/TypeScript, simulando algumas postagem de blogs, no qual você pode comentar, curtir(no caso do projeto aplaudir) quantas vezes quiser e até excluir comentários.
 
-- Configure the top-level `parserOptions` property like this:
+  
+  
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## 💻 Pré-requisitos
+
+  
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+* [`Node`](https://nodejs.org/en)(LTS) instalado. 
+* [`Yarn`](https://yarnpkg.com/) instalado caso não utilize o npm.
+  
+
+## 🚀 Instalando as dependências
+  
+Para rodar o projeto Ignite Blog, entre na pasta do projeto com o terminal e siga a etapa abaixo:
+
+  ```
+Yarn: yarn
+Npm: npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  
+
+## ☕ Usando Ignite Blog
+
+
+  
+
+Para rodar o projeto, siga estas etapas, no terminal digite:
+
+  
+
+```
+yarn dev (caso utilize Yarn)
+npm run dev (caso utilize npm)
+```
+
+  
+
+
+  
